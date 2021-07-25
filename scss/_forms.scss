@@ -1,0 +1,78 @@
+/* Forms for Signup and Login */
+
+.form-wrap {
+    border: $green solid 1px;
+    margin: 2.5rem 1.5rem;
+    padding: 1.5rem 0;
+    background-color: #000;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.2s 0.7s;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    .form-title {
+        font-size: 2.5rem;
+        color: #fff;
+        font-weight: 700;
+        margin: 0;
+        width: max-content;
+    }
+    .form-subtitle {
+        font-size: 1.6rem;
+        color: #fff;
+        margin: 1rem 0;
+        font-weight: 700;
+        width: max-content;
+    }
+}
+
+.input-field {
+    max-width: 20rem;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 0.5rem 0;
+    height: 2.75rem;
+    border-radius: 0.25rem;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+    i {
+        text-align: center;
+        line-height: 2.75rem;
+        color: #acacac;
+        transition: 0.5s;
+        font-size: 1rem;
+    }
+    input {
+        background: none;
+        outline: none;
+        border: none;
+        line-height: 1;
+        font-weight: 600;
+        font-size: 1rem;
+        color: #333;
+        ::placeholder {
+            color: #aaa;
+            font-weight: 500;
+            font-size: 1rem;    
+        }  
+    }
+}
+
+.form-button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.25rem 3.5rem;
+    margin: 0.5rem 0;
+    :hover {
+        color: #000;
+        background-color: #fff;
+    }
+}

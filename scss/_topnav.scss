@@ -1,0 +1,54 @@
+/*TopNavBar*/
+
+.mm-logo {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+}
+
+#topnav-wrap {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    border: $green solid 1px;
+    margin: 1.5rem;
+}
+#topnav {
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 2rem;
+        margin: 0;
+        font-size: 0.8rem;
+        li {
+            padding: 0.3rem;
+            a {
+                text-decoration: none;
+                color: #fff;
+                transition: 0.5s;
+                &:hover {
+                    color: $green;
+                } 
+            }
+        }
+        @media (min-width: 720px) and (max-width: 1440px) {
+            justify-content: space-evenly;
+            flex-direction: row;
+            font-size: 1rem;
+            li {
+                padding: 0 1rem;
+            }
+        }
+        @media screen and (min-width: 1440px) {
+            font-size: 1.4rem;
+            justify-content: space-evenly;
+            flex-direction: row;
+            li {
+                padding: 0.5rem 1.5rem;
+            }
+        }
+    }
+}

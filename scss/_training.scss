@@ -1,0 +1,118 @@
+/*Training Grid Def*/
+
+.trn-plans {
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "sub1"
+        "img1"
+        "btn1"
+        "sub2"
+        "img2"
+        "btn2"
+        "sub3"
+        "img3"
+        "btn3";
+    grid-template-columns: 80%;
+    grid-template-rows: 2.5rem 5rem 12.5rem 3.5rem 5rem 12.5rem 3.5rem 5rem 12.5rem 3.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1.5rem;
+    padding: 1rem 0 ;
+    background-color: #000;
+    border: $green solid 1px;
+    @media (min-width: 720px) and (max-width: 1440px) {
+        grid-template-rows: 2.5rem 3.5rem 12.5rem 3.5rem 3.5rem 12.5rem 3.5rem 3.5rem 12.5rem 3.5rem;
+        padding: 0.5rem 0;
+    }
+    @media screen and (min-width: 1440px) {
+        grid-template-areas: 
+        "title title title"
+        "sub1  sub2  sub3"
+        "img1  img2  img3"
+        "btn1  btn2  btn3";
+        grid-template-columns: 17rem 17rem 17rem;
+        grid-template-rows: 6rem 5rem 13rem 3.5rem;
+        column-gap: 5rem;
+        padding: 1.5rem 1rem 3rem 1rem; 
+    }
+} 
+
+#trn-plans-title {
+    font-size: 0.8rem;
+    width: max-content;
+    grid-area: title;
+}
+
+#trn-plans-sub1 {
+    grid-area: sub1;
+}
+#trn-plans-img1 {
+    grid-area: img1;
+}
+#trn-plans-btn1 {
+    grid-area: btn1;
+}
+#trn-plans-sub2 {
+    grid-area: sub2;
+}
+#trn-plans-img2 {
+    grid-area: img2;
+}
+#trn-plans-btn2 {
+    grid-area: btn2;
+}
+#trn-plans-img3 {
+    grid-area: img3;
+}
+#trn-plans-sub3 {
+    grid-area: sub3;
+}
+#trn-plans-btn3 {
+    grid-area: btn3;
+}
+
+/* Training Style */
+
+.trn-sub {
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.trn-txt {
+    font-size: 0.6rem;
+}
+
+.trn-grid-item {
+    justify-self: center;
+}
+
+@media screen and (min-width: 1440px) {
+    .trn-sub {
+        font-size: 1rem;
+    }
+    .trn-txt {
+        font-size: 0.6rem;
+    }
+
+    #trn-title {
+        font-size: 2rem;
+    }
+}
+
+.training-photo {
+    width: 15rem;
+    height: 11rem;
+    border: $greenglow solid 0.5px;
+}
+
+.see-more {
+    padding: 0.25rem 2rem;
+    &:hover {
+        color: $green;
+        background-color: #222;
+        border: $green solid 2px;
+    }
+}

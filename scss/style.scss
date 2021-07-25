@@ -1,0 +1,41 @@
+/* Color Defs */
+
+$green: #39FF14;
+$greenglow: #7cf866;
+$dgrey: #333;
+
+/* Base HTML style*/
+
+html {
+    font-family: montserrat;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to left, #080808, #111, #222, #222, #111, #080808 );
+    color: #fff;
+    margin: 0;
+}
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1rem;
+    background-color: $dgrey;
+    transition: 0.5s;
+    border-radius: 0.5rem;
+    border: $dgrey solid 1px;
+}
+
+.btn-wrap {
+    padding: 0.5rem 2rem;
+}
+
+/* Imports */
+
+@import "topnav";
+@import "footer";
+@import "index";
+@import "training";
+@import "forms";

@@ -1,0 +1,81 @@
+/*Index Start*/
+
+.index-title-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem 0;
+    background-image: url(../img/HTWProcks.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (min-width: 720px) and (max-width: 1440px) {padding: 7.5rem 0;}
+    @media screen and (min-width: 1440px) {padding: 11rem 0;}
+}
+.headline {
+    color: #000;
+    font-weight: 900;
+    margin: 0;
+    font-size: 1.5rem;
+    @media (min-width: 720px) and (max-width: 1440px) {font-size: 2.4rem;}
+    @media screen and (min-width: 1440px) {font-size: 3rem; font-weight: 700;}
+}
+.subtitle {
+    color: #000;
+    font-weight: 800;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+.btn{
+    padding: 0.5rem 2rem;
+    &:hover {
+        color: $green;
+        border: $greenglow solid 1px;
+    }
+}
+.btn-wrap {
+    margin: 1rem 0;
+}
+
+/*Benefits List*/
+
+#benef-list-wrap {
+    width: auto;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    border: $green solid 1px;
+    border-radius: 0.3rem;
+    background-color: #000;
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 0.6rem;
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0;
+        @media (min-width: 720px) and (max-width: 1440px) {font-size: 0.8rem;}
+        @media screen and (min-width: 1440px) {font-size: 1.2rem; flex-direction: row;}
+        li {
+            margin: 0.5rem 0.2rem;
+            &::before {
+                content: ">> ";
+                color: $green;
+            }
+        }
+    }
+}
+
+/* Carousel */
+
+#carousel-container {
+    border: $green solid 1px;
+    border-radius: 0.3rem;
+    background-color: #000;
+    padding: 1.2rem;
+    width: 70%;
+    margin: 0 auto;
+    @media screen and (min-width: 1440px) {width: 40%;}
+    @media (min-width: 720px) and (max-width: 1440px) {width: 50%;}
+}
