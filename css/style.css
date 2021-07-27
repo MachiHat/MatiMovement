@@ -1,4 +1,5 @@
 /* Color Defs */
+/* MIXINS DEFS */
 /* Base HTML style*/
 html {
   font-family: montserrat;
@@ -164,8 +165,9 @@ footer {
 
 /*Index Start*/
 .index-title-wrap {
-  display: flex;
   align-items: center;
+  justify-content: center;
+  display: flex;
   flex-direction: column;
   padding: 2.5rem 0;
   background-image: url(../img/HTWProcks.jpg);
@@ -183,41 +185,37 @@ footer {
     padding: 11rem 0;
   }
 }
-
-.headline {
+.index-title-wrap .headline {
   color: #000;
   font-weight: 900;
   margin: 0;
   font-size: 1.5rem;
 }
 @media (min-width: 720px) and (max-width: 1440px) {
-  .headline {
+  .index-title-wrap .headline {
     font-size: 2.4rem;
   }
 }
 @media screen and (min-width: 1440px) {
-  .headline {
+  .index-title-wrap .headline {
     font-size: 3rem;
     font-weight: 700;
   }
 }
-
-.subtitle {
+.index-title-wrap .subtitle {
   color: #000;
   font-weight: 800;
   margin: 0 auto;
   font-size: 1rem;
 }
-
-.btn {
+.index-title-wrap .btn {
   padding: 0.5rem 2rem;
 }
-.btn:hover {
+.index-title-wrap .btn:hover {
   color: #39FF14;
   border: #7cf866 solid 1px;
 }
-
-.btn-wrap {
+.index-title-wrap .btn-wrap {
   margin: 1rem 0;
 }
 
@@ -368,11 +366,11 @@ footer {
 
 @media screen and (min-width: 1440px) {
   .trn-sub {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .trn-txt {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   #trn-title {
@@ -380,8 +378,8 @@ footer {
   }
 }
 .training-photo {
-  width: 15rem;
-  height: 11rem;
+  width: 16rem;
+  height: 12rem;
   border: #7cf866 solid 0.5px;
 }
 
@@ -470,6 +468,38 @@ footer {
 .form-button :hover {
   color: #000;
   background-color: #fff;
+}
+
+/* WIP SECTION */
+.screen {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.wip-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  border: #39FF14 solid 1px;
+  padding: 5rem;
+}
+.wip-container .mm-logo {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 5rem;
+}
+.wip-container p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.wip-container .btn-wrap .btn {
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

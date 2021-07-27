@@ -4,6 +4,20 @@ $green: #39FF14;
 $greenglow: #7cf866;
 $dgrey: #333;
 
+/* MIXINS DEFS */
+
+@mixin container {
+    background-color: $dgrey;
+    border-radius: 0.5rem;
+    border: $dgrey solid 1px;
+}
+
+@mixin centerflex {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 /* Base HTML style*/
 
 html {
@@ -39,3 +53,4 @@ body {
 @import "index";
 @import "training";
 @import "forms";
+@import "community";
