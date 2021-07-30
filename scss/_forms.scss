@@ -5,30 +5,34 @@
     margin: 2.5rem 1.5rem;
     padding: 1.5rem 0;
     background-color: #000;
-}
-
-.form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: all 0.2s 0.7s;
-    overflow: hidden;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    .form-title {
-        font-size: 2.5rem;
-        color: #fff;
-        font-weight: 700;
-        margin: 0;
-        width: max-content;
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 0.2s 0.7s;
+        overflow: hidden;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        .form-title {
+            font-size: 2.5rem;
+            color: #fff;
+            font-weight: 700;
+            margin: 0;
+            width: max-content;
+        }
+        .form-subtitle {
+            font-size: 1.6rem;
+            color: #fff;
+            margin: 1rem 0;
+            font-weight: 700;
+            width: max-content;
+        }
     }
-    .form-subtitle {
-        font-size: 1.6rem;
+    a {
+        text-decoration: none;
         color: #fff;
-        margin: 1rem 0;
-        font-weight: 700;
-        width: max-content;
+        font-size: 0.8rem;
     }
 }
 

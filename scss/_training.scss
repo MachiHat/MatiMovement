@@ -21,6 +21,34 @@
     padding: 1rem 0 ;
     background-color: #000;
     border: $green solid 1px;
+    #trn-title{font-size: 1rem;}
+    .trn-sub {
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }   
+    .trn-txt {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .trn-grid-item {
+        justify-self: center;
+    }
+    .training-photo {
+        width: 16rem;
+        height: 12rem;
+        border: $greenglow solid 0.5px;
+    }
+    .see-more {
+        padding: 0.25rem 2rem;
+        &:hover {
+            color: $green;
+            background-color: #222;
+            border: $green solid 2px;
+        }
+    }
     @media (min-width: 720px) and (max-width: 1440px) {
         grid-template-rows: 2.5rem 3.5rem 12.5rem 3.5rem 3.5rem 12.5rem 3.5rem 3.5rem 12.5rem 3.5rem;
         padding: 0.5rem 0;
@@ -34,7 +62,16 @@
         grid-template-columns: 17rem 17rem 17rem;
         grid-template-rows: 6rem 5rem 13rem 3.5rem;
         column-gap: 5rem;
-        padding: 1.5rem 1rem 3rem 1rem; 
+        padding: 1.5rem 1rem 3rem 1rem;
+        .trn-sub {
+            font-size: 1.4rem;
+        }
+        .trn-txt {
+            font-size: 1rem;
+        }
+        #trn-title {
+            font-size: 2rem;
+        }
     }
 } 
 
@@ -43,7 +80,6 @@
     width: max-content;
     grid-area: title;
 }
-
 #trn-plans-sub1 {
     grid-area: sub1;
 }
@@ -74,45 +110,4 @@
 
 /* Training Style */
 
-.trn-sub {
-    font-size: 1rem;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-}
 
-.trn-txt {
-    font-size: 0.6rem;
-}
-
-.trn-grid-item {
-    justify-self: center;
-}
-
-@media screen and (min-width: 1440px) {
-    .trn-sub {
-        font-size: 1.4rem;
-    }
-    .trn-txt {
-        font-size: 0.8rem;
-    }
-
-    #trn-title {
-        font-size: 2rem;
-    }
-}
-
-.training-photo {
-    width: 16rem;
-    height: 12rem;
-    border: $greenglow solid 0.5px;
-}
-
-.see-more {
-    padding: 0.25rem 2rem;
-    &:hover {
-        color: $green;
-        background-color: #222;
-        border: $green solid 2px;
-    }
-}

@@ -49,7 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   list-style: none;
-  padding: 2rem;
+  padding: 1rem;
   margin: 0;
   font-size: 0.8rem;
 }
@@ -169,7 +169,7 @@ footer {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding: 2.5rem 0;
+  padding: 3.5rem 0;
   background-image: url(../img/HTWProcks.jpg);
   background-position: center;
   background-size: cover;
@@ -182,7 +182,7 @@ footer {
 }
 @media screen and (min-width: 1440px) {
   .index-title-wrap {
-    padding: 11rem 0;
+    padding: 17rem 0;
   }
 }
 .index-title-wrap .headline {
@@ -233,7 +233,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   list-style: none;
   padding: 0;
   margin: 1rem 0;
@@ -263,17 +263,27 @@ footer {
   border-radius: 0.3rem;
   background-color: #000;
   padding: 1.2rem;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
+}
+#carousel-container p {
+  font-size: 1rem;
+  text-align: center;
 }
 @media screen and (min-width: 1440px) {
   #carousel-container {
     width: 40%;
   }
+  #carousel-container p {
+    font-size: 1.4rem;
+  }
 }
 @media (min-width: 720px) and (max-width: 1440px) {
   #carousel-container {
     width: 50%;
+  }
+  #carousel-container p {
+    font-size: 1rem;
   }
 }
 
@@ -290,6 +300,36 @@ footer {
   background-color: #000;
   border: #39FF14 solid 1px;
 }
+.trn-plans #trn-title {
+  font-size: 1rem;
+}
+.trn-plans .trn-sub {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+.trn-plans .trn-txt {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.trn-plans .trn-grid-item {
+  justify-self: center;
+}
+.trn-plans .training-photo {
+  width: 16rem;
+  height: 12rem;
+  border: #7cf866 solid 0.5px;
+}
+.trn-plans .see-more {
+  padding: 0.25rem 2rem;
+}
+.trn-plans .see-more:hover {
+  color: #39FF14;
+  background-color: #222;
+  border: #39FF14 solid 2px;
+}
 @media (min-width: 720px) and (max-width: 1440px) {
   .trn-plans {
     grid-template-rows: 2.5rem 3.5rem 12.5rem 3.5rem 3.5rem 12.5rem 3.5rem 3.5rem 12.5rem 3.5rem;
@@ -303,6 +343,15 @@ footer {
     grid-template-rows: 6rem 5rem 13rem 3.5rem;
     column-gap: 5rem;
     padding: 1.5rem 1rem 3rem 1rem;
+  }
+  .trn-plans .trn-sub {
+    font-size: 1.4rem;
+  }
+  .trn-plans .trn-txt {
+    font-size: 1rem;
+  }
+  .trn-plans #trn-title {
+    font-size: 2rem;
   }
 }
 
@@ -349,49 +398,6 @@ footer {
 }
 
 /* Training Style */
-.trn-sub {
-  font-size: 1rem;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-}
-
-.trn-txt {
-  font-size: 0.6rem;
-}
-
-.trn-grid-item {
-  justify-self: center;
-}
-
-@media screen and (min-width: 1440px) {
-  .trn-sub {
-    font-size: 1.4rem;
-  }
-
-  .trn-txt {
-    font-size: 0.8rem;
-  }
-
-  #trn-title {
-    font-size: 2rem;
-  }
-}
-.training-photo {
-  width: 16rem;
-  height: 12rem;
-  border: #7cf866 solid 0.5px;
-}
-
-.see-more {
-  padding: 0.25rem 2rem;
-}
-.see-more:hover {
-  color: #39FF14;
-  background-color: #222;
-  border: #39FF14 solid 2px;
-}
-
 /* Forms for Signup and Login */
 .form-wrap {
   border: #39FF14 solid 1px;
@@ -399,8 +405,7 @@ footer {
   padding: 1.5rem 0;
   background-color: #000;
 }
-
-.form {
+.form-wrap .form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -410,19 +415,24 @@ footer {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-.form .form-title {
+.form-wrap .form .form-title {
   font-size: 2.5rem;
   color: #fff;
   font-weight: 700;
   margin: 0;
   width: max-content;
 }
-.form .form-subtitle {
+.form-wrap .form .form-subtitle {
   font-size: 1.6rem;
   color: #fff;
   margin: 1rem 0;
   font-weight: 700;
   width: max-content;
+}
+.form-wrap a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
 }
 
 .input-field {
