@@ -39,29 +39,30 @@ body {
 /*TopNavBar*/
 .navbar {
   display: flex;
+  flex-wrap: nowrap;
   position: relative;
   align-items: center;
   justify-content: space-between;
   background-color: #000;
-  min-height: 3rem;
+  min-height: 3.4rem;
   width: 100%;
   padding: 0;
+}
+@media screen and (min-width: 720px) {
+  .navbar {
+    flex-direction: row;
+    height: 3.8rem;
+  }
 }
 .navbar .hamburger {
   border: none;
   color: #fff;
   background-color: #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.navbar .hamburger .bar {
-  height: 3px;
-  width: 100%;
-  border-radius: 10px;
+  margin-right: 1rem;
 }
 .navbar .hamburger .fa.fa-bars {
   color: #fff;
+  font-size: 1.4rem;
 }
 @media (min-width: 720px) and (max-width: 1440px) {
   .navbar .hamburger {
@@ -77,13 +78,19 @@ body {
   display: none;
   width: 100%;
 }
+@media screen and (min-width: 720px) {
+  .navbar .navbar-links {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .navbar .navbar-links .active {
-  display: flex !important;
+  display: flex;
 }
 .navbar .navbar-links ul {
   position: absolute;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-evenly;
   background-color: #000;
   height: 98vh;
@@ -92,38 +99,39 @@ body {
   margin: 0;
   font-size: 1.5rem;
 }
-.navbar .navbar-links li {
-  padding: 2rem 0;
+.navbar .navbar-links ul li {
   list-style: none;
   text-align: center;
 }
-.navbar .navbar-links li a {
+.navbar .navbar-links ul li a {
   text-decoration: none;
   color: #fff;
   transition: 0.5s;
 }
-.navbar .navbar-links li a:hover {
+.navbar .navbar-links ul li a:hover {
   color: #0096FF;
   font-weight: bolder;
 }
 @media (min-width: 720px) and (max-width: 1440px) {
-  .navbar .navbar-links {
+  .navbar .navbar-links ul {
     display: flex;
     flex-direction: row;
-    max-height: 3rem;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    height: 3.2rem;
     position: relative;
   }
 }
 @media screen and (min-width: 1440px) {
-  .navbar .navbar-links {
+  .navbar .navbar-links ul {
     display: flex;
     position: relative;
-    max-height: 3rem;
+    max-height: 3.2rem;
     font-size: 1.4rem;
     justify-content: space-evenly;
     flex-direction: row;
   }
-  .navbar .navbar-links li {
+  .navbar .navbar-links ul li {
     padding: 0.5rem 2.5rem;
   }
 }
@@ -310,6 +318,41 @@ footer .mm-logo {
 #benef-list-wrap ul li::before {
   content: ">> ";
   color: #0096FF;
+}
+
+/* About */
+#about-container {
+  background-color: #000;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
+}
+#about-container img {
+  height: 10rem;
+  width: 10rem;
+}
+#about-container #about-text {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#about-container #about-text p {
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0;
+}
+@media screen and (min-width: 720px) {
+  #about-container #about-text p {
+    padding: 0 20%;
+  }
+}
+#about-container #about-text span {
+  color: #555;
+  font-weight: 800;
+  font-size: 1.1rem;
 }
 
 /* Carousel */

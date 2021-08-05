@@ -69,6 +69,36 @@
     }
 }
 
+/* About */
+
+#about-container {
+    background-color: #000;
+    @include centerflex;
+    flex-direction: column;
+    height: 40rem;
+    img {
+        height: 10rem;
+        width: 10rem;
+    }
+    #about-text {
+        @include centerflex;
+        p {
+            color: #fff;
+            font-size: 1rem;
+            padding: 1rem;
+            margin: 0;
+            @media screen and (min-width: 720px) {
+                padding: 0 20%;
+            }
+        }
+        span {
+            color: $g2;
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
+    }
+}
+
 /* Carousel */
 
 #carousel-container {
