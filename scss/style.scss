@@ -1,15 +1,17 @@
 /* Color Defs */
 
-$green: #39FF14;
-$greenglow: #7cf866;
-$dgrey: #333;
+/*$green: #39FF14;*/
+$w1: #0c06f7;
+$w2: #0096FF;
+$g1: #111;
+$g2: #555;
 
 /* MIXINS DEFS */
 
 @mixin container {
-    background-color: $dgrey;
+    background-color: #080808;
     border-radius: 0.5rem;
-    border: $dgrey solid 1px;
+    border: $w1 solid 1px;
 }
 
 @mixin centerflex {
@@ -20,13 +22,14 @@ $dgrey: #333;
 
 /* Base HTML style*/
 
-html {
+* {
     font-family: montserrat;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: linear-gradient(to left, #080808, #111, #222, #222, #111, #080808 );
+    background-color: $g1;
     color: #fff;
     margin: 0;
 }
@@ -36,14 +39,20 @@ body {
     text-decoration: none;
     font-weight: 800;
     font-size: 1rem;
-    background-color: $dgrey;
+    background-color: $g2;
     transition: 0.5s;
     border-radius: 0.5rem;
-    border: $dgrey solid 1px;
+    border: $g2 solid 1px;
 }
 
 .btn-wrap {
     padding: 0.5rem 2rem;
+}
+
+.mm-logo {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
 }
 
 /* Imports */

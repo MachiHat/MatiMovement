@@ -1,6 +1,6 @@
 /*Training Grid Def*/
 
-.trn-plans {
+#trn-plans {
     display: grid;
     grid-template-areas: 
         "title"
@@ -17,10 +17,7 @@
     grid-template-rows: 2.5rem 5rem 12.5rem 3.5rem 5rem 12.5rem 3.5rem 5rem 12.5rem 3.5rem;
     justify-content: center;
     align-items: center;
-    margin: 1rem 1.5rem;
     padding: 1rem 0 ;
-    background-color: #000;
-    border: $green solid 1px;
     #trn-title{font-size: 1rem;}
     .trn-sub {
         margin-top: 1rem;
@@ -39,14 +36,13 @@
     .training-photo {
         width: 16rem;
         height: 12rem;
-        border: $greenglow solid 0.5px;
     }
     .see-more {
         padding: 0.25rem 2rem;
         &:hover {
-            color: $green;
-            background-color: #222;
-            border: $green solid 2px;
+            color: $w1;
+            background-color: #eee;
+            border: $w1 solid 1px;
         }
     }
     @media (min-width: 720px) and (max-width: 1440px) {
@@ -59,8 +55,8 @@
         "sub1  sub2  sub3"
         "img1  img2  img3"
         "btn1  btn2  btn3";
-        grid-template-columns: 17rem 17rem 17rem;
-        grid-template-rows: 6rem 5rem 13rem 3.5rem;
+        grid-template-columns: 20rem 20rem 20rem;
+        grid-template-rows: 7rem 7rem 15rem 4rem;
         column-gap: 5rem;
         padding: 1.5rem 1rem 3rem 1rem;
         .trn-sub {
@@ -71,6 +67,10 @@
         }
         #trn-title {
             font-size: 2rem;
+        }
+        .training-photo {
+            width: 20rem;
+            height: 15rem;
         }
     }
 } 
@@ -108,6 +108,5 @@
     grid-area: btn3;
 }
 
-/* Training Style */
 
 

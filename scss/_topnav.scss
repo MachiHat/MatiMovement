@@ -1,52 +1,81 @@
 /*TopNavBar*/
 
-.mm-logo {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 3rem;
-}
 
-#topnav-wrap {
-    @include centerflex;
-    flex-direction: row;
+.navbar {    
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
     background-color: #000;
-    border: $green solid 1px;
-    margin: 1.5rem;
-}
-#topnav {
-    ul {
+    min-height: 3rem;
+    width: 100%;
+    padding: 0;
+    .hamburger {
+        border: none;
+        color: #fff;
+        background-color: #000;
         display: flex;
         flex-direction: column;
-        list-style: none;
-        padding: 1rem;
-        margin: 0;
-        font-size: 0.8rem;
-        li {
-            padding: 0.3rem;
-            a {
-                text-decoration: none;
-                color: #fff;
-                transition: 0.5s;
-                &:hover {
-                    color: $green;
-                } 
-            }
+        justify-content: space-between;
+        .bar {
+            height: 3px;
+            width: 100%;
+            border-radius: 10px;
         }
-        @media (min-width: 720px) and (max-width: 1440px) {
-            justify-content: space-evenly;
-            flex-direction: row;
-            font-size: 1rem;
-            li {
-                padding: 0 1rem;
-            }
+        .fa.fa-bars {
+            color: #fff;
         }
-        @media screen and (min-width: 1440px) {
-            font-size: 1.4rem;
+        @media (min-width: 720px) and (max-width: 1440px) {display: none;}
+        @media screen and (min-width: 1440px) {display: none;}
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+        .active {
+            display: flex !important;
+        }
+        ul {
+            position: absolute;
+            flex-direction: column;
+            align-items: flex-start;
             justify-content: space-evenly;
-            flex-direction: row;
+            background-color: #000;
+            height: 98vh;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            font-size: 1.5rem;
+            }
             li {
-                padding: 0.5rem 1.5rem;
+                padding: 2rem 0;
+                list-style: none;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    transition: 0.5s;
+                    &:hover {
+                        color: $w2;
+                        font-weight: bolder;
+                    } 
+                }
+            }
+            @media (min-width: 720px) and (max-width: 1440px) {
+                display: flex;
+                flex-direction: row;
+                max-height: 3rem;
+                position: relative;
+            }
+            @media screen and (min-width: 1440px) {
+                display: flex;
+                position: relative;
+                max-height: 3rem;
+                font-size: 1.4rem;
+                justify-content: space-evenly;
+                flex-direction: row;
+                li {
+                    padding: 0.5rem 2.5rem;
+                }
             }
         }
     }
-}

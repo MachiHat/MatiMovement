@@ -1,7 +1,7 @@
 /* Forms for Signup and Login */
 
 .form-wrap {
-    border: $green solid 1px;
+    border: $w1 solid 1px;
     margin: 2.5rem 1.5rem;
     padding: 1.5rem 0;
     background-color: #000;
@@ -76,7 +76,7 @@
     padding: 0.25rem 3.5rem;
     margin: 0.5rem 0;
     :hover {
-        color: #000;
-        background-color: #fff;
+        color: $w2;
+        background-color: #eee;
     }
 }

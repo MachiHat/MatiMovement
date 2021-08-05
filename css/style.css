@@ -1,13 +1,15 @@
 /* Color Defs */
+/*$green: #39FF14;*/
 /* MIXINS DEFS */
 /* Base HTML style*/
-html {
+* {
   font-family: montserrat;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
-  background-image: linear-gradient(to left, #080808, #111, #222, #222, #111, #080808);
+  background-color: #111;
   color: #fff;
   margin: 0;
 }
@@ -17,84 +19,128 @@ body {
   text-decoration: none;
   font-weight: 800;
   font-size: 1rem;
-  background-color: #333;
+  background-color: #555;
   transition: 0.5s;
   border-radius: 0.5rem;
-  border: #333 solid 1px;
+  border: #555 solid 1px;
 }
 
 .btn-wrap {
   padding: 0.5rem 2rem;
 }
 
-/* Imports */
-/*TopNavBar*/
 .mm-logo {
   height: 3rem;
   width: 3rem;
   border-radius: 3rem;
 }
 
-#topnav-wrap {
-  align-items: center;
-  justify-content: center;
+/* Imports */
+/*TopNavBar*/
+.navbar {
   display: flex;
-  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
   background-color: #000;
-  border: #39FF14 solid 1px;
-  margin: 1.5rem;
+  min-height: 3rem;
+  width: 100%;
+  padding: 0;
 }
-
-#topnav ul {
+.navbar .hamburger {
+  border: none;
+  color: #fff;
+  background-color: #000;
   display: flex;
   flex-direction: column;
-  list-style: none;
-  padding: 1rem;
+  justify-content: space-between;
+}
+.navbar .hamburger .bar {
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+}
+.navbar .hamburger .fa.fa-bars {
+  color: #fff;
+}
+@media (min-width: 720px) and (max-width: 1440px) {
+  .navbar .hamburger {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .navbar .hamburger {
+    display: none;
+  }
+}
+.navbar .navbar-links {
+  display: none;
+  width: 100%;
+}
+.navbar .navbar-links .active {
+  display: flex !important;
+}
+.navbar .navbar-links ul {
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: #000;
+  height: 98vh;
+  width: 100%;
+  padding: 0;
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
-#topnav ul li {
-  padding: 0.3rem;
+.navbar .navbar-links li {
+  padding: 2rem 0;
+  list-style: none;
+  text-align: center;
 }
-#topnav ul li a {
+.navbar .navbar-links li a {
   text-decoration: none;
   color: #fff;
   transition: 0.5s;
 }
-#topnav ul li a:hover {
-  color: #39FF14;
+.navbar .navbar-links li a:hover {
+  color: #0096FF;
+  font-weight: bolder;
 }
 @media (min-width: 720px) and (max-width: 1440px) {
-  #topnav ul {
-    justify-content: space-evenly;
+  .navbar .navbar-links {
+    display: flex;
     flex-direction: row;
-    font-size: 1rem;
-  }
-  #topnav ul li {
-    padding: 0 1rem;
+    max-height: 3rem;
+    position: relative;
   }
 }
 @media screen and (min-width: 1440px) {
-  #topnav ul {
+  .navbar .navbar-links {
+    display: flex;
+    position: relative;
+    max-height: 3rem;
     font-size: 1.4rem;
     justify-content: space-evenly;
     flex-direction: row;
   }
-  #topnav ul li {
-    padding: 0.5rem 1.5rem;
+  .navbar .navbar-links li {
+    padding: 0.5rem 2.5rem;
   }
 }
 
 footer {
   margin-bottom: 0;
-  margin: 1rem 1.5rem;
   background-color: #000;
-  border: #39FF14 solid 1px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 10rem;
+}
+footer .mm-logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
 }
 @media screen and (min-width: 720px) {
   footer {
@@ -138,7 +184,7 @@ footer {
   color: #fff;
 }
 .lang-select ul a:hover {
-  color: #39FF14;
+  color: #0096FF;
   transition: 0.5s;
 }
 
@@ -146,6 +192,7 @@ footer {
   list-style: none;
   display: flex;
   flex-direction: row;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -154,7 +201,7 @@ footer {
   padding: 0 0.5rem;
 }
 #social ul a:hover {
-  color: #39FF14;
+  color: #0096FF;
   transition: 0.5s;
 }
 
@@ -170,7 +217,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 3.5rem 0;
-  background-image: url(../img/HTWProcks.jpg);
+  background-image: url(../img/HTWProcks.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -186,7 +233,7 @@ footer {
   }
 }
 .index-title-wrap .headline {
-  color: #000;
+  color: #fff;
   font-weight: 900;
   margin: 0;
   font-size: 1.5rem;
@@ -198,34 +245,42 @@ footer {
 }
 @media screen and (min-width: 1440px) {
   .index-title-wrap .headline {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 3.8rem;
+    font-weight: 900;
   }
 }
 .index-title-wrap .subtitle {
-  color: #000;
+  color: #fff;
   font-weight: 800;
   margin: 0 auto;
   font-size: 1rem;
 }
+@media screen and (min-width: 1440px) {
+  .index-title-wrap .subtitle {
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+}
 .index-title-wrap .btn {
   padding: 0.5rem 2rem;
+  border: #555 solid 3px;
 }
 .index-title-wrap .btn:hover {
-  color: #39FF14;
-  border: #7cf866 solid 1px;
+  color: #0096FF;
+  border-top: #fff solid;
+  border-left: #fff solid;
+  border-bottom: #555 solid;
+  border-right: #555 solid;
+  background-color: #eee;
 }
 .index-title-wrap .btn-wrap {
-  margin: 1rem 0;
+  margin: 0.6rem 0;
 }
 
 /*Benefits List*/
 #benef-list-wrap {
   width: auto;
-  margin: 1.5rem;
   padding: 0.5rem;
-  border: #39FF14 solid 1px;
-  border-radius: 0.3rem;
   background-color: #000;
 }
 #benef-list-wrap ul {
@@ -245,7 +300,7 @@ footer {
 }
 @media screen and (min-width: 1440px) {
   #benef-list-wrap ul {
-    font-size: 1.2rem;
+    font-size: 1rem;
     flex-direction: row;
   }
 }
@@ -254,21 +309,21 @@ footer {
 }
 #benef-list-wrap ul li::before {
   content: ">> ";
-  color: #39FF14;
+  color: #0096FF;
 }
 
 /* Carousel */
 #carousel-container {
-  border: #39FF14 solid 1px;
-  border-radius: 0.3rem;
-  background-color: #000;
-  padding: 1.2rem;
-  width: 80%;
+  background-color: #fff;
+  padding: 1.6rem;
+  width: 100%;
   margin: 0 auto;
 }
 #carousel-container p {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
   text-align: center;
+  color: #000;
 }
 @media screen and (min-width: 1440px) {
   #carousel-container {
@@ -288,70 +343,70 @@ footer {
 }
 
 /*Training Grid Def*/
-.trn-plans {
+#trn-plans {
   display: grid;
   grid-template-areas: "title" "sub1" "img1" "btn1" "sub2" "img2" "btn2" "sub3" "img3" "btn3";
   grid-template-columns: 80%;
   grid-template-rows: 2.5rem 5rem 12.5rem 3.5rem 5rem 12.5rem 3.5rem 5rem 12.5rem 3.5rem;
   justify-content: center;
   align-items: center;
-  margin: 1rem 1.5rem;
   padding: 1rem 0;
-  background-color: #000;
-  border: #39FF14 solid 1px;
 }
-.trn-plans #trn-title {
+#trn-plans #trn-title {
   font-size: 1rem;
 }
-.trn-plans .trn-sub {
+#trn-plans .trn-sub {
   margin-top: 1rem;
   font-size: 1rem;
   font-weight: 600;
   display: flex;
   justify-content: center;
 }
-.trn-plans .trn-txt {
+#trn-plans .trn-txt {
   font-size: 0.8rem;
   text-align: center;
 }
-.trn-plans .trn-grid-item {
+#trn-plans .trn-grid-item {
   justify-self: center;
 }
-.trn-plans .training-photo {
+#trn-plans .training-photo {
   width: 16rem;
   height: 12rem;
-  border: #7cf866 solid 0.5px;
 }
-.trn-plans .see-more {
+#trn-plans .see-more {
   padding: 0.25rem 2rem;
 }
-.trn-plans .see-more:hover {
-  color: #39FF14;
-  background-color: #222;
-  border: #39FF14 solid 2px;
+#trn-plans .see-more:hover {
+  color: #0c06f7;
+  background-color: #eee;
+  border: #0c06f7 solid 1px;
 }
 @media (min-width: 720px) and (max-width: 1440px) {
-  .trn-plans {
+  #trn-plans {
     grid-template-rows: 2.5rem 3.5rem 12.5rem 3.5rem 3.5rem 12.5rem 3.5rem 3.5rem 12.5rem 3.5rem;
     padding: 0.5rem 0;
   }
 }
 @media screen and (min-width: 1440px) {
-  .trn-plans {
+  #trn-plans {
     grid-template-areas: "title title title" "sub1  sub2  sub3" "img1  img2  img3" "btn1  btn2  btn3";
-    grid-template-columns: 17rem 17rem 17rem;
-    grid-template-rows: 6rem 5rem 13rem 3.5rem;
+    grid-template-columns: 20rem 20rem 20rem;
+    grid-template-rows: 7rem 7rem 15rem 4rem;
     column-gap: 5rem;
     padding: 1.5rem 1rem 3rem 1rem;
   }
-  .trn-plans .trn-sub {
+  #trn-plans .trn-sub {
     font-size: 1.4rem;
   }
-  .trn-plans .trn-txt {
+  #trn-plans .trn-txt {
     font-size: 1rem;
   }
-  .trn-plans #trn-title {
+  #trn-plans #trn-title {
     font-size: 2rem;
+  }
+  #trn-plans .training-photo {
+    width: 20rem;
+    height: 15rem;
   }
 }
 
@@ -397,10 +452,9 @@ footer {
   grid-area: btn3;
 }
 
-/* Training Style */
 /* Forms for Signup and Login */
 .form-wrap {
-  border: #39FF14 solid 1px;
+  border: #0c06f7 solid 1px;
   margin: 2.5rem 1.5rem;
   padding: 1.5rem 0;
   background-color: #000;
@@ -476,8 +530,8 @@ footer {
   margin: 0.5rem 0;
 }
 .form-button :hover {
-  color: #000;
-  background-color: #fff;
+  color: #0096FF;
+  background-color: #eee;
 }
 
 /* WIP SECTION */
@@ -495,7 +549,7 @@ footer {
   display: flex;
   align-items: center;
   background-color: #000;
-  border: #39FF14 solid 1px;
+  border: #0c06f7 solid 1px;
   padding: 5rem;
 }
 .wip-container .mm-logo {

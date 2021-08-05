@@ -1,14 +1,16 @@
 footer {
     margin-bottom: 0;
-    margin: 1rem 1.5rem;
     background-color: #000;
-    border: #39FF14 solid 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 10rem;
-    
+    .mm-logo {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+    }
     @media screen and (min-width: 720px) {
         height: 7.5rem;
         flex-direction: row;
@@ -46,7 +48,7 @@ footer {
         text-decoration: none;
         color: #fff;
         &:hover {
-            color: $green;
+            color: $w2;
             transition: 0.5s;
         }
     }
@@ -56,6 +58,7 @@ footer {
     list-style: none;
     display: flex;
     flex-direction: row;
+    list-style: none;
     margin: 0;
     padding: 0;
     li {
@@ -63,7 +66,7 @@ footer {
         padding: 0 0.5rem;
     }
     a:hover {
-        color: #39FF14;
+        color: $w2;
         transition: 0.5s;
     }
 }

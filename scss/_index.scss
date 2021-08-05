@@ -4,35 +4,41 @@
     @include centerflex;
     flex-direction: column;
     padding: 3.5rem 0;
-    background-image: url(../img/HTWProcks.jpg);
+    background-image: url(../img/HTWProcks.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     @media (min-width: 720px) and (max-width: 1440px) {padding: 7.5rem 0;}
     @media screen and (min-width: 1440px) {padding: 17rem 0;}
     .headline {
-        color: #000;
+        color: #fff;
         font-weight: 900;
         margin: 0;
         font-size: 1.5rem;
         @media (min-width: 720px) and (max-width: 1440px) {font-size: 2.4rem;}
-        @media screen and (min-width: 1440px) {font-size: 3rem; font-weight: 700;}
+        @media screen and (min-width: 1440px) {font-size: 3.8rem; font-weight: 900;}
     }
     .subtitle {
-        color: #000;
+        color: #fff;
         font-weight: 800;
         margin: 0 auto;
         font-size: 1rem;
+        @media screen and (min-width: 1440px) {font-size: 1.8rem; font-weight: 900;}
     }
     .btn{
         padding: 0.5rem 2rem;
+        border: $g2 solid 3px;
         &:hover {
-            color: $green;
-            border: $greenglow solid 1px;
+            color: $w2;
+            border-top: #fff solid;
+            border-left: #fff solid;
+            border-bottom: $g2 solid;
+            border-right: $g2 solid;
+            background-color: #eee;
         }
     }
     .btn-wrap {
-        margin: 1rem 0;
+        margin: 0.6rem 0;
     }
 }
 
@@ -40,10 +46,7 @@
 
 #benef-list-wrap {
     width: auto;
-    margin: 1.5rem;
     padding: 0.5rem;
-    border: $green solid 1px;
-    border-radius: 0.3rem;
     background-color: #000;
     ul {
         display: flex;
@@ -55,12 +58,12 @@
         padding: 0;
         margin: 1rem 0;
         @media (min-width: 720px) and (max-width: 1440px) {font-size: 0.8rem;}
-        @media screen and (min-width: 1440px) {font-size: 1.2rem; flex-direction: row;}
+        @media screen and (min-width: 1440px) {font-size: 1rem; flex-direction: row;}
         li {
             margin: 0.5rem 0.2rem;
             &::before {
                 content: ">> ";
-                color: $green;
+                color: $w2;
             }
         }
     }
@@ -69,13 +72,11 @@
 /* Carousel */
 
 #carousel-container {
-    border: $green solid 1px;
-    border-radius: 0.3rem;
-    background-color: #000;
-    padding: 1.2rem;
-    width: 80%;
+    background-color: #fff;
+    padding: 1.6rem;
+    width: 100%;
     margin: 0 auto;
-    p {font-size: 1rem; text-align: center;}
+    p {font-size: 1.2rem; font-weight: 700; text-align: center; color: #000;}
     @media screen and (min-width: 1440px) {width: 40%; p {font-size: 1.4rem;}}
     @media (min-width: 720px) and (max-width: 1440px) {width: 50%; p {font-size: 1rem;}}
 }
