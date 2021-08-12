@@ -8,25 +8,32 @@
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage | MatiMovement</title>
+    <title>LOGIN | MatiMovement</title>
 </head>
 
 <body>
 
     <!-- TOPNAV -->
 
-    <header id="topnav-wrap">
-        <img src="../img/logoprovisorio.png" alt="logo" class="mm-logo">
-        <nav id="topnav">
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="../index.html#trn-plans">TRAINING</a></li>
-                <li><a href="#">COMUNITY</a></li>
-                <li><a href="../index.html#social">SOCIAL</a></li>
-                <li><a href="login.html">LOG IN</a></li>
-            </ul>
-        </nav>
+    <header>
+      <nav class="navbar">
+        <a href="index.html"><img src="../img/logoprovisorio.png" alt="logo" class="mm-logo"></a>
+        <button class="hamburger" id="hamburger">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../index.html#trn-plans">TRAINING</a></li>
+            <li><a href="../index.html#about-container">ABOUT</a></li>
+            <li><a href="../index.html#social">CONTACT</a></li>
+            <li><a href="login.html">LOG IN</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
+
+    <!-- INPUT FORM -->
 
     <section class="form-wrap">
         <form action="#logged" class="form">
@@ -42,7 +49,7 @@
             </div>
             <a href="signup.html">Don't have an account yet?</a>
             <br>
-            <input class="btn form-button" type="submit" value="Log In" />
+            <button class="btn form-button" type="submit" value="Log In"></button>
         </form>
     </section>
 
@@ -69,9 +76,9 @@
         <div class="foot-seg">
           <div id="social">
             <ul>
-              <li><a href="#" class="fa fa-instagram"></a></li>
-              <li><a href="#" class="fa fa-youtube"></a></li>
-              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="https://www.instagram.com/matimovementtraining/" class="fa fa-instagram"></a></li>
+              <li><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
+              <li><a href="#" class="fa fa-envelope"></a></li>
             </ul>
           </div>
         </div>

@@ -1,4 +1,3 @@
-
 const hamburger = document.getElementsByClassName('hamburger')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 

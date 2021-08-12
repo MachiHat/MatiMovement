@@ -27,14 +27,9 @@
     }
     .btn{
         padding: 0.5rem 2rem;
-        border: $g2 solid 3px;
         &:hover {
             color: $w2;
-            border-top: #fff solid;
-            border-left: #fff solid;
-            border-bottom: $g2 solid;
-            border-right: $g2 solid;
-            background-color: #eee;
+            background-color: #ddd;
         }
     }
     .btn-wrap {

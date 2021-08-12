@@ -37,9 +37,12 @@ body {
 
 /* Imports */
 /*TopNavBar*/
+.active {
+  display: flex !important;
+}
+
 .navbar {
   display: flex;
-  flex-wrap: nowrap;
   position: relative;
   align-items: center;
   justify-content: space-between;
@@ -52,6 +55,7 @@ body {
   .navbar {
     flex-direction: row;
     height: 3.8rem;
+    flex-wrap: nowrap;
   }
 }
 .navbar .hamburger {
@@ -84,9 +88,6 @@ body {
     flex-direction: row;
   }
 }
-.navbar .navbar-links .active {
-  display: flex;
-}
 .navbar .navbar-links ul {
   position: absolute;
   flex-direction: column;
@@ -102,6 +103,7 @@ body {
 .navbar .navbar-links ul li {
   list-style: none;
   text-align: center;
+  padding: 3rem 0;
 }
 .navbar .navbar-links ul li a {
   text-decoration: none;
@@ -271,15 +273,10 @@ footer .mm-logo {
 }
 .index-title-wrap .btn {
   padding: 0.5rem 2rem;
-  border: #555 solid 3px;
 }
 .index-title-wrap .btn:hover {
   color: #0096FF;
-  border-top: #fff solid;
-  border-left: #fff solid;
-  border-bottom: #555 solid;
-  border-right: #555 solid;
-  background-color: #eee;
+  background-color: #ddd;
 }
 .index-title-wrap .btn-wrap {
   margin: 0.6rem 0;
@@ -420,9 +417,8 @@ footer .mm-logo {
   padding: 0.25rem 2rem;
 }
 #trn-plans .see-more:hover {
-  color: #0c06f7;
+  color: #0096FF;
   background-color: #eee;
-  border: #0c06f7 solid 1px;
 }
 @media (min-width: 720px) and (max-width: 1440px) {
   #trn-plans {
@@ -497,10 +493,8 @@ footer .mm-logo {
 
 /* Forms for Signup and Login */
 .form-wrap {
-  border: #0c06f7 solid 1px;
-  margin: 2.5rem 1.5rem;
-  padding: 1.5rem 0;
-  background-color: #000;
+  margin: 3rem 0;
+  padding: 0;
 }
 .form-wrap .form {
   display: flex;
@@ -536,7 +530,7 @@ footer .mm-logo {
   max-width: 20rem;
   width: 100%;
   background-color: #f0f0f0;
-  margin: 0.5rem 0;
+  margin: 0.5rem;
   height: 2.75rem;
   border-radius: 0.25rem;
   display: grid;

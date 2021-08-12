@@ -1,9 +1,11 @@
 /*TopNavBar*/
 
+.active {
+    display: flex !important;
+}
 
 .navbar {    
     display: flex;
-    flex-wrap: nowrap;
     position: relative;
     align-items: center;
     justify-content: space-between;
@@ -11,7 +13,7 @@
     min-height: 3.4rem;
     width: 100%;
     padding: 0;
-    @media screen and (min-width: 720px) {flex-direction: row; height: 3.8rem;}
+    @media screen and (min-width: 720px) {flex-direction: row; height: 3.8rem; flex-wrap: nowrap;}
     .hamburger {
         border: none;
         color: #fff;
@@ -28,9 +30,6 @@
         display: none;
         width: 100%;
         @media screen and (min-width: 720px) {display: flex; flex-direction: row;}
-        .active {
-            display: flex;
-        }
         ul {
             position: absolute;
             flex-direction: column;
@@ -45,6 +44,7 @@
             li {
                 list-style: none;
                 text-align: center;
+                padding: 3rem 0;
                 a {
                     text-decoration: none;
                     color: #fff;
@@ -77,3 +77,4 @@
         }
     }
 }
+

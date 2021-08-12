@@ -40,9 +40,8 @@
     .see-more {
         padding: 0.25rem 2rem;
         &:hover {
-            color: $w1;
+            color: $w2;
             background-color: #eee;
-            border: $w1 solid 1px;
         }
     }
     @media (min-width: 720px) and (max-width: 1440px) {
