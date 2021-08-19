@@ -43,6 +43,7 @@ body {
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   align-items: center;
   justify-content: space-between;
@@ -58,11 +59,14 @@ body {
     flex-wrap: nowrap;
   }
 }
+.navbar .mm-logo {
+  margin-left: 1.2rem;
+}
 .navbar .hamburger {
   border: none;
   color: #fff;
   background-color: #000;
-  margin-right: 1rem;
+  margin-right: 1.2rem;
 }
 .navbar .hamburger .fa.fa-bars {
   color: #fff;
@@ -86,6 +90,7 @@ body {
   .navbar .navbar-links {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 }
 .navbar .navbar-links ul {
@@ -103,7 +108,12 @@ body {
 .navbar .navbar-links ul li {
   list-style: none;
   text-align: center;
-  padding: 3rem 0;
+  padding: 2rem 0;
+}
+@media screen and (min-width: 720px) {
+  .navbar .navbar-links ul li {
+    padding: 0.5rem 0;
+  }
 }
 .navbar .navbar-links ul li a {
   text-decoration: none;
@@ -127,11 +137,11 @@ body {
 @media screen and (min-width: 1440px) {
   .navbar .navbar-links ul {
     display: flex;
-    position: relative;
     max-height: 3.2rem;
     font-size: 1.4rem;
     justify-content: space-evenly;
     flex-direction: row;
+    position: relative;
   }
   .navbar .navbar-links ul li {
     padding: 0.5rem 2.5rem;
@@ -139,13 +149,13 @@ body {
 }
 
 footer {
-  margin-bottom: 0;
   background-color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 10rem;
+  bottom: 100%;
 }
 footer .mm-logo {
   width: 3rem;
@@ -222,9 +232,9 @@ footer .mm-logo {
 
 /*Index Start*/
 .index-title-wrap {
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
   flex-direction: column;
   padding: 3.5rem 0;
   background-image: url(../img/HTWProcks.png);
@@ -320,9 +330,9 @@ footer .mm-logo {
 /* About */
 #about-container {
   background-color: #000;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
   flex-direction: column;
   height: 40rem;
 }
@@ -331,9 +341,9 @@ footer .mm-logo {
   width: 10rem;
 }
 #about-container #about-text {
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
 }
 #about-container #about-text p {
   color: #fff;
@@ -491,6 +501,15 @@ footer .mm-logo {
   grid-area: btn3;
 }
 
+/* READ MORE */
+.read-more-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #111;
+}
+
 /* Forms for Signup and Login */
 .form-wrap {
   margin: 3rem 0;
@@ -528,7 +547,7 @@ footer .mm-logo {
 
 .input-field {
   max-width: 20rem;
-  width: 100%;
+  width: 90%;
   background-color: #f0f0f0;
   margin: 0.5rem;
   height: 2.75rem;
@@ -536,7 +555,6 @@ footer .mm-logo {
   display: grid;
   grid-template-columns: 15% 85%;
   padding: 0 0.4rem;
-  position: relative;
 }
 .input-field i {
   text-align: center;
@@ -573,17 +591,17 @@ footer .mm-logo {
 
 /* WIP SECTION */
 .screen {
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
   height: 100vh;
   width: 100%;
 }
 
 .wip-container {
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
   align-items: center;
   background-color: #000;
   border: #0c06f7 solid 1px;
@@ -601,6 +619,12 @@ footer .mm-logo {
 .wip-container .btn-wrap .btn {
   font-size: 1.5rem;
   padding: 1rem;
+}
+#contact-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

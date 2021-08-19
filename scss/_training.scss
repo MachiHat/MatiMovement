@@ -107,5 +107,12 @@
     grid-area: btn3;
 }
 
+/* READ MORE */
 
-
+.read-more-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $g1;
+}

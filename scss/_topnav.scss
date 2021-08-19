@@ -6,6 +6,7 @@
 
 .navbar {    
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     align-items: center;
     justify-content: space-between;
@@ -14,11 +15,12 @@
     width: 100%;
     padding: 0;
     @media screen and (min-width: 720px) {flex-direction: row; height: 3.8rem; flex-wrap: nowrap;}
+    .mm-logo { margin-left: 1.2rem; }
     .hamburger {
         border: none;
         color: #fff;
         background-color: #000;
-        margin-right: 1rem;
+        margin-right: 1.2rem;
         .fa.fa-bars {
             color: #fff;
             font-size: 1.4rem;
@@ -29,7 +31,7 @@
     .navbar-links {
         display: none;
         width: 100%;
-        @media screen and (min-width: 720px) {display: flex; flex-direction: row;}
+        @media screen and (min-width: 720px) {display: flex; flex-direction: row; align-items: center;}
         ul {
             position: absolute;
             flex-direction: column;
@@ -44,7 +46,8 @@
             li {
                 list-style: none;
                 text-align: center;
-                padding: 3rem 0;
+                padding: 2rem 0;
+                @media screen and (min-width: 720px) {padding: 0.5rem 0;}
                 a {
                     text-decoration: none;
                     color: #fff;
@@ -65,11 +68,11 @@
             }
             @media screen and (min-width: 1440px) {
                 display: flex;
-                position: relative;
                 max-height: 3.2rem;
                 font-size: 1.4rem;
                 justify-content: space-evenly;
                 flex-direction: row;
+                position: relative;
                 li {
                     padding: 0.5rem 2.5rem;
                 }
