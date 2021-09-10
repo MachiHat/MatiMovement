@@ -37,22 +37,28 @@
 
   <section class="form-wrap">
     <form action="#" class="form">
+      
       <h2 class="form-title">JOIN THE</h2>
       <h2 class="form-title">MOVEMENT</h2>
       <h3 class="form-subtitle">Sign Up here</h3>
+      
       <div class="input-field">
-        <i class="su-user"></i>
-        <input type="text" placeholder="Username" required />
+        <i class="suname"></i>
+        <input id="suname" type="text" placeholder="Username" value="" required/>
       </div>
+      
       <div class="input-field">
-        <i class="su-mail"></i>
-        <input type="email" placeholder="E-Mail" required />
+        <i class="sumail"></i>
+        <input id="sumail" type="email" placeholder="E-Mail" required />
       </div>
+      
       <div class="input-field">
-        <i class="su-lock"></i>
-        <input type="password" placeholder="Password" required />
+        <i class="supw"></i>
+        <input id="supw" type="password" placeholder="Password" value="" required/>
       </div>
-      <input class="btn form-button" type="submit" value="Sign Up" />
+
+      <button class="btn form-button" type="submit" value="Sign Up" onClick="store()">SIGN UP</button>
+    
     </form>
   </section>
 
