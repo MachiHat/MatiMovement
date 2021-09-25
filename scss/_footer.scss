@@ -20,10 +20,12 @@ footer {
 #foot-copy {
     font-size: 1rem;
     color: #888;
+    padding: 0.2rem 0;
 }
 
 #foot-name {
     font-size: 1rem;
+    padding: 0.2rem 0;
 }
 
 .foot-seg {
@@ -31,6 +33,7 @@ footer {
     width: 33%;
     justify-content: center;
     align-items: center;
+    padding: 0.4rem 0;
     p {margin: 0;}
 }
 
@@ -60,7 +63,7 @@ footer {
     flex-direction: row;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0.4rem;
     li {
         font-size: 2rem;
         padding: 0 0.5rem;

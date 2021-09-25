@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercises | MatiMovement</title>
+</head>
+
+<body style="height: 99vh;">
+
+    <!-- TOPNAV -->
+
+    <header>
+        <nav class="navbar">
+            <a href="../index.html"><img src="../img/logoprovisorio.png" alt="logo" class="mm-logo"></a>
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../index.html#trn-plans">TRAINING</a></li>
+                    <li><a href="../index.html#about-container">ABOUT</a></li>
+                    <li><a href="../index.html#social">CONTACT</a></li>
+                    <li><a href="login.html">LOG IN</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- LOADING SCREEN -->
+
+    <div id='loading-wrap'>
+        <img class="mm-logo loading-logo" src="../img/logoprovisorio.png" alt="logo">
+        <p> Loading, please wait. </p>
+    </div>
+
+    <section id="filter-wrap">
+
+        <!-- FILTER BTNS -->
+
+        <div id="filter-btns-wrap">
+            <ul>
+                <li data-li="all" class="btn list-btn active">All</li>
+                <li data-li="biceps" class="btn list-btn">Biceps</li>
+                <li data-li="triceps" class="btn list-btn">Triceps</li>
+                <li data-li="deltoids" class="btn list-btn">Deltoids</li>
+                <li data-li="pectorals" class="btn list-btn">Pectorals</li>
+                <li data-li="abdominals" class="btn list-btn">Abdominals</li>
+                <li data-li="obliques" class="btn list-btn">Obliques</li>
+                <li data-li="dorsals" class="btn list-btn">Dorsals</li>
+                <li data-li="trapezius" class="btn list-btn">Trapezius</li>
+                <li data-li="scapular" class="btn list-btn">Teres and Scapular</li>
+                <li data-li="lumbar" class="btn list-btn">Erector Spinae</li>
+            </ul>
+        </div>
+
+        <!-- EXCERCISE VIDEO LIST -->
+
+        <div id="excercise-list-wrap">
+            
+            <div class="excercise-item dorsals scapular triceps pectorals" id="video-item-1">
+                <h3> PULL UPS </h3><button class="fa fa-play"></button>
+                <div class="excercise-video-wrap"  id="video-1">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+            
+            <div class="excercise-item dorsals pectorals biceps scapular" id="video-item-2">
+                <h3> CHIN UPS </h3><button class="fa fa-play"></button>
+                <div class="excercise-video-wrap"  id="video-2">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+            
+            <div class="excercise-item dorsals pectorals scapular" id="video-item-3">
+                <h3> BODY ROWS </h3><button class="fa fa-play"> </button>
+                <div class="excercise-video-wrap"  id="video-3">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+            
+            <div class="excercise-item deltoids triceps" id="video-item-4">
+                <h3> PYKE PUSH UPS </h3><button class="fa fa-play"> </button>
+                <div class="excercise-video-wrap"  id="video-4">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+            
+            <div class="excercise-item deltoids triceps abdominals obliques" id="video-item-5">
+                <h3> PLANCHE </h3><button class="fa fa-play"> </button>
+                <div class="excercise-video-wrap"  id="video-5">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+            
+            <div class="excercise-item dorsals scapular deltoids triceps abdominals obliques pectorals" id="video-item-6">
+                <h3> FRONT LEVER </h3><button class="fa fa-play"> </button>
+                <div class="excercise-video-wrap"  id="video-6">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+            
+            <div class="excercise-item deltoids pectorals biceps lumbar abdominals" id="video-item-7">
+                <h3> BACK LEVER </h3><button class="fa fa-play"> </button>
+                <div class="excercise-video-wrap"  id="video-7">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+            
+            <div class="excercise-item abdominals obliques triceps deltoids dorsals" id="video-item-8">
+                <h3> L-SIT </h3><button class="fa fa-play"> </button>
+                <div class="excercise-video-wrap"  id="video-8">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+            
+            <div class="excercise-item triceps deltoids pectorals" id="video-item-9">
+                <h3> DIPS </h3><button class="fa fa-play"> </button>
+                <div class="excercise-video-wrap"  id="video-9">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+            
+            <div class="excercise-item trapezius obliques dorsals lumbar deltoids triceps" id="video-item-10">
+                <h3> HAND-STAND </h3><button class="fa fa-play"> </button>
+                <div class="excercise-video-wrap"  id="video-10">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+           
+            <div class="excercise-item abdominals obliques lumbar" id="video-item-11">
+                <h3> DRAGON FLAG </h3><button class="fa fa-play"> </button>
+                <div class="excercise-video-wrap"  id="video-11">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+           
+            <div class="excercise-item abdominals obliques lumbar" id="video-item-12">
+                <h3> LUMBAR BRIDGE </h3><button class="fa fa-play"> </button>
+                <div class="excercise-video-wrap"  id="video-12">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+            
+            <div class="excercise-item dorsals trapezius pectorals biceps triceps scapular" id="video-item-13">
+                <h3> MUSCLE UP </h3><button class="fa fa-play"> </button>
+                <div class="excercise-video-wrap"  id="video-13">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+
+            <div class="excercise-item pectorals deltoids triceps abdominals" id="video-item-14">
+                <h3> PUSH UPS </h3><button class="fa fa-play"> </button>
+                <div class="excercise-video-wrap"  id="video-14">
+                    <video class="excercise-video" controls>
+                        <source src="" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="foot-seg">
+            <p id="foot-copy">©2021</p>
+            <p id="foot-name">MATIMOVEMENT</p>
+        </div>
+
+        <div class="foot-seg">
+            <img src="../img/logoprovisorio.png" alt="logo" class="mm-logo">
+            <div class="lang-select">
+                <ul>
+                    <li><a href="#">EN</a></li>
+                    <li>/</li>
+                    <li><a href="#">ES</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="foot-seg">
+            <div id="social">
+                <ul>
+                    <li><a href="https://www.instagram.com/matimovementtraining/" class="fa fa-instagram"></a></li>
+                    <li><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
+                    <li><a href="contact.html" class="fa fa-envelope"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+
+    </footer> 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/filter.js"></script>
+</body>
+
+</html>

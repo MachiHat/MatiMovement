@@ -1,3 +1,9 @@
+// LOADING SCREEN
+
+$(document).ready(function(){ 
+  $('#loading-wrap').hide("slow").remove();
+});
+
 // NAVBAR RESPONSIVE BUTTON
 
 //var defs
@@ -11,7 +17,6 @@ const nav3 = document.getElementsByClassName('navbar-a')[3]
 hamburger.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
-
 nav1.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
@@ -21,13 +26,29 @@ nav2.addEventListener('click', () => {
 nav3.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
+ 
 
 // SIGNUP AND LOGIN FORMS
 
-//var definitions
-var suname = document.getElementById('suname');
-var sumail = document.getElementById('sumail');
-var supw = document.getElementById('supw');
+var newUsername = $('suname');
+var newMail = $('sumail');
+var newPass = $('supw');
+
+function newAcc (username, mail, pass){
+  this.username = newUsername;
+  this.mail = newMail;
+  this.password = newPass;
+}
+
+
+
+/*
+
+//var defs
+
+var suname = $(".suname");
+var sumail = $("#sumail");
+var supw = $("#supw");
 
 //data storing function
 function store() {
@@ -42,8 +63,8 @@ function check() {
   var storedName = localStorage.getItem('suname');
   var storedPw = localStorage.getItem('supw');
 
-  var liname = document.getElementById('liname');
-  var lipw = document.getElementById('lipw');
+  var liname = $("#liname");
+  var lipw = $("#lipw");
 
   if(liname.value == storedName && lipw.value == storedPw) {
     alert('You are loged in.');
@@ -51,3 +72,5 @@ function check() {
     alert('ERROR.');
   }
 }
+
+*/

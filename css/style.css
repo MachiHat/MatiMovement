@@ -15,14 +15,17 @@ body {
 }
 
 .btn {
-  color: #fff;
+  color: #111;
   text-decoration: none;
   font-weight: 800;
   font-size: 1rem;
-  background-color: #555;
-  transition: 0.5s;
-  border-radius: 0.5rem;
-  border: #555 solid 1px;
+  background-color: #FFF;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #FFF;
+  background-color: #0096FF;
 }
 
 .btn-wrap {
@@ -33,6 +36,18 @@ body {
   height: 3rem;
   width: 3rem;
   border-radius: 3rem;
+}
+
+#loading-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 /* Imports */
@@ -172,10 +187,12 @@ footer .mm-logo {
 #foot-copy {
   font-size: 1rem;
   color: #888;
+  padding: 0.2rem 0;
 }
 
 #foot-name {
   font-size: 1rem;
+  padding: 0.2rem 0;
 }
 
 .foot-seg {
@@ -183,6 +200,7 @@ footer .mm-logo {
   width: 33%;
   justify-content: center;
   align-items: center;
+  padding: 0.4rem 0;
 }
 .foot-seg p {
   margin: 0;
@@ -214,7 +232,7 @@ footer .mm-logo {
   flex-direction: row;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0.4rem;
 }
 #social ul li {
   font-size: 2rem;
@@ -283,10 +301,6 @@ footer .mm-logo {
 }
 .index-title-wrap .btn {
   padding: 0.5rem 2rem;
-}
-.index-title-wrap .btn:hover {
-  color: #0096FF;
-  background-color: #ddd;
 }
 .index-title-wrap .btn-wrap {
   margin: 0.6rem 0;
@@ -426,10 +440,6 @@ footer .mm-logo {
 #trn-plans .see-more {
   padding: 0.25rem 2rem;
 }
-#trn-plans .see-more:hover {
-  color: #0096FF;
-  background-color: #eee;
-}
 @media (min-width: 720px) and (max-width: 1440px) {
   #trn-plans {
     grid-template-rows: 2.5rem 3.5rem 12.5rem 3.5rem 3.5rem 12.5rem 3.5rem 3.5rem 12.5rem 3.5rem;
@@ -508,6 +518,77 @@ footer .mm-logo {
   justify-content: center;
   flex-direction: column;
   background-color: #111;
+}
+
+#filter-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ddd;
+  min-height: 10rem;
+}
+#filter-wrap #filter-btns-wrap ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 1rem;
+  padding: 0;
+}
+#filter-wrap #filter-btns-wrap ul li {
+  margin: 10px;
+  padding: 10px 15px;
+  min-width: 80px;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#filter-wrap #filter-btns-wrap ul li.active {
+  color: #FFF;
+  background-color: #0096FF;
+}
+#filter-wrap #excercise-list-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #555;
+  min-height: 70vh;
+}
+#filter-wrap #excercise-list-wrap .excercise-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  margin: auto;
+}
+#filter-wrap #excercise-list-wrap .excercise-item h3 {
+  font-size: 1rem;
+}
+#filter-wrap #excercise-list-wrap .excercise-item button {
+  color: #000;
+  margin-left: 8px;
+}
+#filter-wrap #excercise-list-wrap .excercise-item button:hover {
+  color: #FFF;
+  background-color: #0096FF;
+  transition: all 0.2s ease-in-out;
+}
+#filter-wrap #excercise-list-wrap .excercise-item .excercise-video-wrap {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  height: 95vh;
+  width: 100%;
+  background-color: #000;
+}
+#filter-wrap #excercise-list-wrap .excercise-item .excercise-video-wrap.onVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Forms for Signup and Login */
@@ -619,12 +700,6 @@ footer .mm-logo {
 .wip-container .btn-wrap .btn {
   font-size: 1.5rem;
   padding: 1rem;
-}
-#contact-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

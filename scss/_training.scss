@@ -39,10 +39,6 @@
     }
     .see-more {
         padding: 0.25rem 2rem;
-        &:hover {
-            color: $w2;
-            background-color: #eee;
-        }
     }
     @media (min-width: 720px) and (max-width: 1440px) {
         grid-template-rows: 2.5rem 3.5rem 12.5rem 3.5rem 3.5rem 12.5rem 3.5rem 3.5rem 12.5rem 3.5rem;
