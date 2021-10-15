@@ -67,9 +67,10 @@
     @include centerflex;
     flex-direction: column;
     height: 40rem;
-    img {
+    .profile-photo {
         height: 10rem;
         width: 10rem;
+        border-radius: 5rem
     }
     #about-text {
         @include centerflex;
@@ -77,9 +78,10 @@
             color: #fff;
             font-size: 1rem;
             padding: 1rem;
-            margin: 0;
+            margin: 3.5rem 0;
             @media screen and (min-width: 720px) {
                 padding: 0 20%;
+                margin: 2rem 0;
             }
         }
         span {

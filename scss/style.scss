@@ -42,6 +42,8 @@ body {
     background-color: #FFF;
     transition: all 0.2s ease;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
     &:hover {
         color: #FFF;
         background-color: $w2;
@@ -78,4 +80,4 @@ body {
 @import "training";
 @import "filter";
 @import "forms";
-@import "community";
+@import "shop";

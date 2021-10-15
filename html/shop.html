@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP | MatiMovement</title>
+    <script src="../js/shop.js" async></script>
+</head>
+
+<body>
+
+    <!-- TOPNAV -->
+
+    <header>
+        <nav class="navbar">
+            <a href="../index.html"><img src="../img/logoprovisorio.png" alt="logo" class="mm-logo"></a>
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="navbar-links">
+                <ul>
+                    <li><a class="navbar-a" href="../index.html">HOME</a></li>
+                    <li><a class="navbar-a" href="../index.html#trn-plans">TRAINING</a></li>
+                    <li><a class="navbar-a" href="../index.html#about-container">ABOUT</a></li>
+                    <li><a class="navbar-a" href="../index.html#social">CONTACT</a></li>
+                    <li><a class="navbar-a" href="shop.html">SHOP</a></li>
+                    <li><a class="navbar-a" href="login.html">LOG IN</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- LOADING SCREEN -->
+
+    <div id='loading-wrap'>
+        <img class="mm-logo loading-logo" src="../img/logoprovisorio.png" alt="logo">
+        <p> Loading, please wait. </p>
+    </div>
+
+    <!-- -------------------SHOP------------------- -->
+
+    <section class="shop-container content-section">
+        <h2 class="section-header shop-header">MERCH</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Parallets</span>
+                <img class="shop-item-image" src="../img/parallettesShopImg.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$30</span>
+                    <button class="btn shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Wall Mounted PullUp Bar</span>
+                <img class="shop-item-image" src="../img/pullUpBarShopImg.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$49</span>
+                    <button class="btn shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Gymnastic Rings</span>
+                <img class="shop-item-image" src="../img/ringsShopImg.jfif">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$25</span>
+                    <button class="btn shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Resistance Bands</span>
+                <img class="shop-item-image" src="../img/resistBandsShopImg.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$8</span>
+                    <button class="btn shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Parallel Bars</span>
+                <img class="shop-item-image" src="../img/parallelBarsShopImg.jfif">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$8</span>
+                    <button class="btn shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Wrist Wraps</span>
+                <img class="shop-item-image" src="../img/wristWrapsShopImg.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$9</span>
+                    <button class="btn shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cart-container content-section">
+        <h2 class="section-header cart-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-purchase" type="button">PURCHASE</button>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="foot-seg">
+            <p id="foot-copy">©2021</p>
+            <p id="foot-name">MATIMOVEMENT</p>
+        </div>
+
+        <div class="foot-seg">
+            <img src="../img/logoprovisorio.png" alt="logo" class="mm-logo">
+            <div class="lang-select">
+                <ul>
+                    <li><a href="#">EN</a></li>
+                    <li>/</li>
+                    <li><a href="#">ES</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="foot-seg">
+            <div id="social">
+                <ul>
+                    <li><a href="https://www.instagram.com/matimovementtraining/" class="fa fa-instagram"></a></li>
+                    <li><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
+                    <li><a href="contact.html" class="fa fa-envelope"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</body>
+
+</html>

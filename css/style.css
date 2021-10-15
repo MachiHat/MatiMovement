@@ -22,6 +22,8 @@ body {
   background-color: #FFF;
   transition: all 0.2s ease;
   cursor: pointer;
+  border: none;
+  border-radius: 5px;
 }
 .btn:hover {
   color: #FFF;
@@ -86,6 +88,10 @@ body {
 .navbar .hamburger .fa.fa-bars {
   color: #fff;
   font-size: 1.4rem;
+}
+.navbar .hamburger .fa.fa-bars:hover {
+  color: #0096FF;
+  transition: 0.2;
 }
 @media (min-width: 720px) and (max-width: 1440px) {
   .navbar .hamburger {
@@ -350,9 +356,10 @@ footer .mm-logo {
   flex-direction: column;
   height: 40rem;
 }
-#about-container img {
+#about-container .profile-photo {
   height: 10rem;
   width: 10rem;
+  border-radius: 5rem;
 }
 #about-container #about-text {
   display: flex;
@@ -363,11 +370,12 @@ footer .mm-logo {
   color: #fff;
   font-size: 1rem;
   padding: 1rem;
-  margin: 0;
+  margin: 3.5rem 0;
 }
 @media screen and (min-width: 720px) {
   #about-container #about-text p {
     padding: 0 20%;
+    margin: 2rem 0;
   }
 }
 #about-container #about-text span {
@@ -670,36 +678,147 @@ footer .mm-logo {
   background-color: #eee;
 }
 
-/* WIP SECTION */
-.screen {
+.shop-container {
+  background-color: #fff;
+}
+.shop-container .shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.shop-container .shop-items .shop-item {
+  margin: 30px;
+}
+.shop-container .shop-items .shop-item .shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+.shop-container .shop-items .shop-item .shop-item-image {
+  height: 15rem;
+  width: 15rem;
+}
+.shop-container .shop-items .shop-item .shop-item-details {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
+  padding: 5px;
+}
+.shop-container .shop-items .shop-item .shop-item-details .shop-item-price {
+  flex-grow: 1;
+  color: #333;
+}
+.shop-container .shop-items .shop-item .shop-item-details .shop-item-button {
+  color: #000;
+  background-color: #CCC;
+}
+.shop-container .shop-items .shop-item .shop-item-details .shop-item-button:hover {
+  background-color: #0096FF;
 }
 
-.wip-container {
+.section-header {
+  margin: 0;
+  padding: 10px;
+}
+
+.cart-container {
+  background-color: #555;
+  padding-bottom: 1.2rem;
+}
+.cart-container .cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #111;
+}
+.cart-container .cart-row {
+  display: flex;
+  margin: 0 0.5rem;
+}
+.cart-container .cart-row .cart-column {
   display: flex;
   align-items: center;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-  border: #0c06f7 solid 1px;
-  padding: 5rem;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
 }
-.wip-container .mm-logo {
-  height: 10rem;
-  width: 10rem;
-  border-radius: 5rem;
+.cart-container .cart-row .cart-column .cart-item {
+  width: 45%;
 }
-.wip-container p {
-  font-size: 2rem;
-  font-weight: 700;
+.cart-container .cart-row .cart-column .cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
 }
-.wip-container .btn-wrap .btn {
-  font-size: 1.5rem;
-  padding: 1rem;
+.cart-container .cart-row .cart-column .cart-quantity {
+  width: 35%;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.cart-total .cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+.cart-total .cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #EB5757;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+.btn-danger:hover {
+  background-color: #CC4C4C;
+  transition: 0.2s ease-in-out;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.btn-purchase {
+  font-size: 1.75em;
 }
 
 /*# sourceMappingURL=style.css.map */
